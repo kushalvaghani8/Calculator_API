@@ -4,4 +4,7 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Calculator_Test\Calculator_Test.csproj" />
+  </ItemGroup>
 </Project>
