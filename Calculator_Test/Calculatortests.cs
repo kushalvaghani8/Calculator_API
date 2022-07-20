@@ -21,8 +21,8 @@ namespace Calculator_Test
         public void CalculatorCanAddTwoPositiveNumbers(double expected, double left, double right)
 
         {
-            Calculator calc = new Calculator();
-            Assert.AreEqual(expected, calc.Add(left, right));
+            double result = Calculator.Add(left, right);
+            Assert.AreEqual(expected, result);
         }
 
         [TestMethod]  
@@ -31,8 +31,8 @@ namespace Calculator_Test
         public void CalculatorCanAddTwoNegativeNumbers(double expected, double left, double right)
 
         {
-            Calculator calc = new Calculator();
-            Assert.AreEqual(expected, calc.Add(left, right));
+            double result = Calculator.Add(left, right);
+            Assert.AreEqual(expected, result);
         }
 
         [TestMethod]
@@ -41,8 +41,8 @@ namespace Calculator_Test
         public void CalculatorCanAddZeroToAPositiveNumber(double expected, double left, double right)
 
         {
-            Calculator calc = new Calculator();
-            Assert.AreEqual(expected, calc.Add(left, right));
+            double result = Calculator.Add(left, right);
+            Assert.AreEqual(expected, result);
         }
 
         [TestMethod]
@@ -51,8 +51,8 @@ namespace Calculator_Test
         public void CalculatorCanAddZeroToANegativeNumber(double expected, double left, double right)
 
         {
-            Calculator calc = new Calculator();
-            Assert.AreEqual(expected, calc.Add(left, right));
+            double result = Calculator.Add(left, right);
+            Assert.AreEqual(expected, result);
         }
 
         [TestMethod]
@@ -61,8 +61,8 @@ namespace Calculator_Test
         public void CalculatorCanAddTwoDecimalPositiveNumber(double expected, double left, double right)
 
         {
-            Calculator calc = new Calculator();
-            Assert.AreEqual(expected, calc.Add(left, right));
+            double result = Calculator.Add(left, right);
+            Assert.AreEqual(expected, result);
         }
 
         [TestMethod]
@@ -71,8 +71,8 @@ namespace Calculator_Test
         public void CalculatorCanAddTwoDecimalNegativeNumbers(double expected, double left, double right)
 
         {
-            Calculator calc = new Calculator();
-            Assert.AreEqual(expected, calc.Add(left, right));
+            double result = Calculator.Add(left, right);
+            Assert.AreEqual(expected, result);
         }
 
         [TestMethod]
@@ -81,8 +81,8 @@ namespace Calculator_Test
         public void CalculatorCanAddZeroToADecimalPositiveNumber(double expected, double left, double right)
 
         {
-            Calculator calc = new Calculator();
-            Assert.AreEqual(expected, calc.Add(left, right));
+            double result = Calculator.Add(left, right);
+            Assert.AreEqual(expected, result);
         }
 
         [TestMethod]
@@ -91,8 +91,8 @@ namespace Calculator_Test
         public void CalculatorCanAddZeroToADecimalNegativeNumber(double expected, double left, double right)
 
         {
-            Calculator calc = new Calculator();
-            Assert.AreEqual(expected, calc.Add(left, right));
+            double result = Calculator.Add(left, right);
+            Assert.AreEqual(expected, result);
         }
 
         [TestMethod]
@@ -101,8 +101,8 @@ namespace Calculator_Test
         public void CalculatorCanAddPositiveAndNegativeNumber(double expected, double left, double right)
 
         {
-            Calculator calc = new Calculator();
-            Assert.AreEqual(expected, calc.Add(left, right));
+            double result = Calculator.Add(left, right);
+            Assert.AreEqual(expected, result);
         }
 
         [TestMethod]
@@ -111,8 +111,8 @@ namespace Calculator_Test
         public void CalculatorCanAddPositiveAndNegativeDecimalNumbers(double expected, double left, double right)
 
         {
-            Calculator calc = new Calculator();
-            Assert.AreEqual(expected, calc.Add(left, right));
+            double result = Calculator.Add(left, right);
+            Assert.AreEqual(expected, result);
         }
 
 
@@ -122,8 +122,8 @@ namespace Calculator_Test
         public void CalculatorCanSubtractTwoPositiveNumbers(double expected, double left, double right)
 
         {
-            Calculator calc = new Calculator();
-            Assert.AreEqual(expected, calc.Subtract(left, right));
+            double result = Calculator.Subtract(left, right);
+            Assert.AreEqual(expected, result);
         }
 
         [TestMethod] 
@@ -132,8 +132,8 @@ namespace Calculator_Test
         public void CalculatorCanSubtractTwoNegativeNumbers(double expected, double left, double right)
 
         {
-            Calculator calc = new Calculator();
-            Assert.AreEqual(expected, calc.Subtract(left, right));
+            double result = Calculator.Subtract(left, right);
+            Assert.AreEqual(expected, result);
         }
 
         [TestMethod]
@@ -142,8 +142,8 @@ namespace Calculator_Test
         public void CalculatorCanSubtractZeroFromAPositiveNumber(double expected, double left, double right)
 
         {
-            Calculator calc = new Calculator();
-            Assert.AreEqual(expected, calc.Subtract(left, right));
+            double result = Calculator.Subtract(left, right);
+            Assert.AreEqual(expected, result);
         }
 
         [TestMethod]
@@ -152,8 +152,8 @@ namespace Calculator_Test
         public void CalculatorCanSubtractZeroFromANegativeNumber(double expected, double left, double right)
 
         {
-            Calculator calc = new Calculator();
-            Assert.AreEqual(expected, calc.Subtract(left, right));
+            double result = Calculator.Subtract(left, right);
+            Assert.AreEqual(expected, result);
         }
 
         [TestMethod]
@@ -162,8 +162,8 @@ namespace Calculator_Test
         public void CalculatorCanSubtractTwoDecimalPositiveNumber(double expected, double left, double right)
 
         {
-            Calculator calc = new Calculator();
-            Assert.AreEqual(expected, calc.Subtract(left, right));
+            double result = Calculator.Subtract(left, right);
+            Assert.AreEqual(expected, result);
         }
 
         [TestMethod]
@@ -172,8 +172,8 @@ namespace Calculator_Test
         public void CalculatorCanSubtractTwoDecimalNegativeNumbers(double expected, double left, double right)
 
         {
-            Calculator calc = new Calculator();
-            Assert.AreEqual(expected, calc.Subtract(left, right));
+            double result = Calculator.Subtract(left, right);
+            Assert.AreEqual(expected, result);
         }
 
         [TestMethod] 
@@ -182,8 +182,8 @@ namespace Calculator_Test
         public void CalculatorCanSubtractZeroFromADecimalPositiveNumber(double expected, double left, double right)
 
         {
-            Calculator calc = new Calculator();
-            Assert.AreEqual(expected, calc.Subtract(left, right));
+            double result = Calculator.Subtract(left, right);
+            Assert.AreEqual(expected, result);
         }
 
         [TestMethod]
@@ -192,8 +192,8 @@ namespace Calculator_Test
         public void CalculatorCanSubtractZeroFromADecimalNegativeNumber(double expected, double left, double right)
 
         {
-            Calculator calc = new Calculator();
-            Assert.AreEqual(expected, calc.Subtract(left, right));
+            double result = Calculator.Subtract(left, right);
+            Assert.AreEqual(expected, result);
         }
 
         [TestMethod]
@@ -202,8 +202,8 @@ namespace Calculator_Test
         public void CalculatorCanSubtractPositiveAndNegativeNumber(double expected, double left, double right)
 
         {
-            Calculator calc = new Calculator();
-            Assert.AreEqual(expected, calc.Subtract(left, right));
+            double result = Calculator.Subtract(left, right);
+            Assert.AreEqual(expected, result);
         }
 
         [TestMethod]
@@ -212,8 +212,8 @@ namespace Calculator_Test
         public void CalculatorCanSubtractPositiveAndNegativeDecimalNumbers(double expected, double left, double right)
 
         {
-            Calculator calc = new Calculator();
-            Assert.AreEqual(expected, calc.Subtract(left, right));
+            double result = Calculator.Subtract(left, right);
+            Assert.AreEqual(expected, result);
         }
 
         [TestMethod]
@@ -222,8 +222,8 @@ namespace Calculator_Test
         public void CalculatorCanMultiplyTwoPositiveNumbers(double expected, double left, double right)
 
         {
-            Calculator calc = new Calculator();
-            Assert.AreEqual(expected, calc.Multiply(left, right));
+             double result = Calculator.Multiply(left, right);
+            Assert.AreEqual(expected, result);
         }
 
         [TestMethod] 
@@ -232,8 +232,8 @@ namespace Calculator_Test
         public void CalculatorCanMultiplyTwoNegativeNumbers(double expected, double left, double right)
 
         {
-            Calculator calc = new Calculator();
-            Assert.AreEqual(expected, calc.Multiply(left, right));
+            double result = Calculator.Multiply(left, right);
+            Assert.AreEqual(expected, result);
         }
 
         [TestMethod]
@@ -242,8 +242,8 @@ namespace Calculator_Test
         public void CalculatorCanMultiplyZeroWithAPositiveNumber(double expected, double left, double right)
 
         {
-            Calculator calc = new Calculator();
-            Assert.AreEqual(expected, calc.Multiply(left, right));
+            double result = Calculator.Multiply(left, right);
+            Assert.AreEqual(expected, result);
         }
 
         [TestMethod]
@@ -252,8 +252,8 @@ namespace Calculator_Test
         public void CalculatorCanMultiplyZeroWithANegativeNumber(double expected, double left, double right)
 
         {
-            Calculator calc = new Calculator();
-            Assert.AreEqual(expected, calc.Multiply(left, right));
+            double result = Calculator.Multiply(left, right);
+            Assert.AreEqual(expected, result);
         }
 
 
@@ -263,8 +263,8 @@ namespace Calculator_Test
         public void CalculatorCanMultiplyZeroWithADecimalPositiveNumber(double expected, double left, double right)
 
         {
-            Calculator calc = new Calculator();
-            Assert.AreEqual(expected, calc.Multiply(left, right));
+            double result = Calculator.Multiply(left, right);
+            Assert.AreEqual(expected, result);
         }
 
         [TestMethod]
@@ -273,8 +273,8 @@ namespace Calculator_Test
         public void CalculatorCanMultiplyZeroWithADecimalNegativeNumber(double expected, double left, double right)
 
         {
-            Calculator calc = new Calculator();
-            Assert.AreEqual(expected, calc.Multiply(left, right));
+            double result = Calculator.Multiply(left, right);
+            Assert.AreEqual(expected, result);
         }
 
         [TestMethod]
@@ -283,8 +283,8 @@ namespace Calculator_Test
         public void CalculatorCanMultiplyPositiveAndNegativeNumber(double expected, double left, double right)
 
         {
-            Calculator calc = new Calculator();
-            Assert.AreEqual(expected, calc.Multiply(left, right));
+            double result = Calculator.Multiply(left, right);
+            Assert.AreEqual(expected, result);
         }
 
         [TestMethod]
@@ -293,8 +293,8 @@ namespace Calculator_Test
         public void CalculatorCanDivideTwoPositiveNumbers(double expected, double left, double right)
 
         {
-            Calculator calc = new Calculator();
-            Assert.AreEqual(expected, calc.Divide(left, right));
+            double result = Calculator.Divide(left, right);
+            Assert.AreEqual(expected, result);
         }
 
         [TestMethod]
@@ -303,8 +303,8 @@ namespace Calculator_Test
         public void CalculatorCanDivideTwoNegativeNumbers(double expected, double left, double right)
 
         {
-            Calculator calc = new Calculator();
-            Assert.AreEqual(expected, calc.Divide(left, right));
+            double result = Calculator.Divide(left, right);
+            Assert.AreEqual(expected, result);
         }
 
         [TestMethod]
@@ -313,8 +313,8 @@ namespace Calculator_Test
         public void CalculatorDivideZeroWithAPositiveNumber(double expected, double left, double right)
 
         {
-            Calculator calc = new Calculator();
-            Assert.AreEqual(expected, calc.Divide(left, right));
+            double result = Calculator.Divide(left, right);
+            Assert.AreEqual(expected, result);
         }
 
         [TestMethod]
@@ -323,8 +323,8 @@ namespace Calculator_Test
         public void CalculatorCanDivideZeroWithANegativeNumber(double expected, double left, double right)
 
         {
-            Calculator calc = new Calculator();
-            Assert.AreEqual(expected, calc.Divide(left, right));
+            double result = Calculator.Divide(left, right);
+            Assert.AreEqual(expected, result);
         }
 
 
@@ -334,8 +334,8 @@ namespace Calculator_Test
         public void CalculatorCanDivideZeroWithADecimalPositiveNumber(double expected, double left, double right)
 
         {
-            Calculator calc = new Calculator();
-            Assert.AreEqual(expected, calc.Multiply(left, right));
+            double result = Calculator.Divide(left, right);
+            Assert.AreEqual(expected, result);
         }
 
         [TestMethod]
@@ -344,8 +344,8 @@ namespace Calculator_Test
         public void CalculatorCanDivideZeroWithADecimalNegativeNumber(double expected, double left, double right)
 
         {
-            Calculator calc = new Calculator();
-            Assert.AreEqual(expected, calc.Multiply(left, right));
+            double result = Calculator.Divide(left, right);
+            Assert.AreEqual(expected, result);
         }
 
         [TestMethod]
@@ -354,24 +354,22 @@ namespace Calculator_Test
         public void CalculatorCanDividePositiveAndNegativeNumber(double expected, double left, double right)
 
         {
-            Calculator calc = new Calculator();
-            Assert.AreEqual(expected, calc.Divide(left, right));
+            double result = Calculator.Divide(left, right);
+            Assert.AreEqual(expected, result);
         }
 
         [TestMethod]
         public void CalculatorThrowsExcecptionWhenDividingByZero()
 
         {
-            Calculator calc = new Calculator();
-            Assert.ThrowsException<DivideByZeroException>(() => { calc.Divide(9, 0); });
+            Assert.ThrowsException<DivideByZeroException>(() => { Calculator.Divide(9, 0); });
         }
 
         [TestMethod]
         public void CalculatorDivididesPositiveNumberWithDenominatorGreaterThenZero()
 
         {
-            Calculator calc = new Calculator();
-            Assert.AreEqual(9, calc.Divide(9, 1));
+            Assert.AreEqual(9, Calculator.Divide(9, 1));
         }
 
 
