@@ -5,7 +5,7 @@ VisualStudioVersion = 25.0.1700.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator_API", "Calculator_API\Calculator_API.csproj", "{26166240-E6DB-4BFC-94B0-4F43F1C46762}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator_Logic", "Calculator_Logic\Calculator_Logic.csproj", "{F5A32392-05FC-46C3-9E43-306F7775F0A8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator.Logic", "Calculator_Logic\Calculator.Logic.csproj", "{F5A32392-05FC-46C3-9E43-306F7775F0A8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator_Test", "Calculator_Test\Calculator_Test.csproj", "{26AE104F-FC66-491D-BCE3-6117311FD64E}"
 EndProject
