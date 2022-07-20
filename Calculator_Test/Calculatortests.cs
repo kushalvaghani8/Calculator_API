@@ -216,38 +216,76 @@ namespace Calculator_Test
             Assert.AreEqual(expected, calc.Subtract(left, right));
         }
 
-
-    }
-}
-
-
-
-/*
-        
-
-        
-
-        
-
         [TestMethod]
-        public void CalculatorThrowsExcecptionWhenDividingByZero()
+        [DataRow(1, 1, 1)]
+        [DataRow(2, 2, 1)]
+        public void CalculatorCanMultiplyTwoPositiveNumbers(double expected, double left, double right)
 
         {
             Calculator calc = new Calculator();
-            Assert.ThrowsException<DivideByZeroException>(() => { calc.Divide(9, 0); });
+            Assert.AreEqual(expected, calc.Multiply(left, right));
         }
 
         [TestMethod]
-        public void CalculatorDivididesPositiveNumberWithDenominatorGreaterThenZero()
+        [DataRow(4, -2, -2)]
+        [DataRow(6, -2, -3)]
+        public void CalculatorCanMultiplyTwoNegativeNumbers(double expected, double left, double right)
 
         {
             Calculator calc = new Calculator();
-            Assert.AreEqual(9, calc.Divide(9, 1));
+            Assert.AreEqual(expected, calc.Multiply(left, right));
+        }
+
+        [TestMethod]
+        [DataRow(0, 2, 0)]
+        [DataRow(0, 3, 0)]
+        public void CalculatorCanMultiplyZeroWithAPositiveNumber(double expected, double left, double right)
+
+        {
+            Calculator calc = new Calculator();
+            Assert.AreEqual(expected, calc.Multiply(left, right));
+        }
+
+        [TestMethod]
+        [DataRow(0, -1, 0)]
+        [DataRow(0, -3, 0)]
+        public void CalculatorCanMultiplyZeroWithANegativeNumber(double expected, double left, double right)
+
+        {
+            Calculator calc = new Calculator();
+            Assert.AreEqual(expected, calc.Multiply(left, right));
         }
 
 
+        [TestMethod] 
+        [DataRow(0, 4.1, 0)]
+        [DataRow(0, 5.1, 0)]
+        public void CalculatorCanMultiplyZeroWithADecimalPositiveNumber(double expected, double left, double right)
+
+        {
+            Calculator calc = new Calculator();
+            Assert.AreEqual(expected, calc.Multiply(left, right));
+        }
+
+        [TestMethod]
+        [DataRow(0, -2.1, 0)]
+        [DataRow(0, -3.1, 0)]
+        public void CalculatorCanMultiplyZeroWithADecimalNegativeNumber(double expected, double left, double right)
+
+        {
+            Calculator calc = new Calculator();
+            Assert.AreEqual(expected, calc.Multiply(left, right));
+        }
+
+        [TestMethod]
+        [DataRow(-1, -1, 1)]
+        [DataRow(-27, -3, 9)]
+        public void CalculatorCanMultiplyPositiveAndNegativeNumber(double expected, double left, double right)
+
+        {
+            Calculator calc = new Calculator();
+            Assert.AreEqual(expected, calc.Multiply(left, right));
+        }
+
     }
 }
-
-
- */
