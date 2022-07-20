@@ -27,5 +27,11 @@ namespace Calculator_API.Controllers
         {
             return Calculator.Add(left, right);
         }
+
+        [HttpPost("Subtract")]
+        public double Subtract(double left, double right)
+        {
+            return Calculator.Subtract(left, right);
+        }
     }
 }
