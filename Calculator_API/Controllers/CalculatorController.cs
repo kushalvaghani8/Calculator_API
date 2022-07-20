@@ -22,6 +22,7 @@ namespace Calculator_API.Controllers
             _logger = logger;
         }
 
+
         [HttpPost("Add")]
         public double Add(double left, double right)
         {
@@ -33,5 +34,12 @@ namespace Calculator_API.Controllers
         {
             return Calculator.Subtract(left, right);
         }
+
+        [HttpPost("Multiply")]
+        public double Multiply(double left, double right)
+        {
+            return Calculator.Multiply(left, right);
+        }
+
     }
 }
