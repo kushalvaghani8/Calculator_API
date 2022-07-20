@@ -23,5 +23,21 @@ namespace Calculator_Logic
             return left * right;
         }
 
+         public double Divide(double left, double right)
+
+         {
+             if (right != 0)
+
+             {
+                 return left / right;
+             }
+
+             else
+
+             {
+                 throw new DivideByZeroException();
+             }
+
+         }
     }
 }
