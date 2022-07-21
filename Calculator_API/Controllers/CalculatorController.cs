@@ -41,5 +41,20 @@ namespace Calculator_API.Controllers
             return Calculator.Multiply(left, right);
         }
 
+
+        [HttpPost("Divide")]
+        public IActionResult Divide(double left, double right)
+        {
+            try
+            {
+                return Ok(Calculator.Divide(left, right));
+            }
+            catch (DivideByZeroException err)
+            {
+                Console.WriteLine("Enter a valid number possibly non-zero value");
+                return BadRequest();
+            }
+        }
+
     }
 }
