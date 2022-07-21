@@ -3,8 +3,8 @@ using Calculator_Logic;
 using System;
 
 namespace Calculator_Test
-{
-    [TestClass]
+{ 
+    [TestClass] //checking if calculator class is rechable - instantiable
     public class Calculatortests
     {
         [TestMethod]
@@ -15,6 +15,7 @@ namespace Calculator_Test
             Assert.IsNotNull(calc);
         }
 
+        //test methods for add
         [TestMethod] 
         [DataRow(2, 1, 1)]
         [DataRow(3, 2, 1)]
@@ -115,7 +116,7 @@ namespace Calculator_Test
             Assert.AreEqual(expected, result);
         }
 
-
+        //subtract test methods
         [TestMethod] 
         [DataRow(0, 1, 1)]
         [DataRow(1, 2, 1)]
@@ -215,7 +216,7 @@ namespace Calculator_Test
             double result = Calculator.Subtract(left, right);
             Assert.AreEqual(expected, result);
         }
-
+        //multiply test
         [TestMethod]
         [DataRow(1, 1, 1)]
         [DataRow(2, 2, 1)]
@@ -287,6 +288,7 @@ namespace Calculator_Test
             Assert.AreEqual(expected, result);
         }
 
+        //divide tests
         [TestMethod]
         [DataRow(1, 1, 1)]
         [DataRow(2, 2, 1)]
@@ -358,13 +360,14 @@ namespace Calculator_Test
             Assert.AreEqual(expected, result);
         }
 
+        //test for dividing by zero with exception
         [TestMethod]
         public void CalculatorThrowsExcecptionWhenDividingByZero()
-
         {
             Assert.ThrowsException<DivideByZeroException>(() => { Calculator.Divide(9, 0); });
         }
 
+        //test method if positive number is greater than denominator
         [TestMethod]
         public void CalculatorDivididesPositiveNumberWithDenominatorGreaterThenZero()
 

@@ -23,33 +23,33 @@ namespace Calculator_API.Controllers
         }
 
 
-        [HttpPost("Add")]
+        [HttpPost("Add")] //add for api
         public double Add(double left, double right)
         {
             return Calculator.Add(left, right);
         }
 
-        [HttpPost("Subtract")]
+        [HttpPost("Subtract")] //subtract for api
         public double Subtract(double left, double right)
         {
             return Calculator.Subtract(left, right);
         }
 
-        [HttpPost("Multiply")]
+        [HttpPost("Multiply")] // multiply for api
         public double Multiply(double left, double right)
         {
             return Calculator.Multiply(left, right);
         }
 
 
-        [HttpPost("Divide")]
+        [HttpPost("Divide")]//divide for api
         public IActionResult Divide(double left, double right)
         {
             try
             {
                 return Ok(Calculator.Divide(left, right));
             }
-            catch (DivideByZeroException err)
+            catch (DivideByZeroException err) //catching error for number divided by zero
             {
                 Console.WriteLine("Enter a valid number possibly non-zero value");
                 return BadRequest();
